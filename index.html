@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sothearith Chao | Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Sothearith Chao, a 19-year-old developer working with web technologies, C, C++, C# and SQL."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/tailwind.config.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body class="font-body antialiased">
+    <!-- Header -->
+    <header class="header fixed inset-x-0 top-0 z-50 transition-colors">
+      <nav
+        class="mx-auto flex max-w-6xl items-center justify-between bg-amber-700 rounded-full px-6 py-5 mt-4"
+      >
+        <a href="#home" class="font-display text-lg font-bold"
+          >Sothearith Chao</a
+        >
+        <ul class="hidden gap-8 text-sm font-medium md:flex">
+          <li><a class="nav-link py-1" href="#home">Home</a></li>
+          <li><a class="nav-link py-1" href="#about">About</a></li>
+          <li><a class="nav-link py-1" href="#projects">Projects</a></li>
+          <li><a class="nav-link py-1" href="#contact">Contact</a></li>
+        </ul>
+        <button
+          id="menu-btn"
+          class="md:hidden"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 7h18M7 12h14M11 17h10" />
+          </svg>
+        </button>
+      </nav>
+      <ul
+        id="mobile-menu"
+        class="hidden border-t border-line bg-ink px-6 py-4 text-sm font-medium md:hidden"
+      >
+        <li><a class="block py-3" href="#home">Home</a></li>
+        <li><a class="block py-3" href="#about">About</a></li>
+        <li><a class="block py-3" href="#projects">Projects</a></li>
+        <li><a class="block py-3" href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section
+        id="home"
+        class="hero-glow relative overflow-hidden pt-28 md:pt-0"
+      >
+        <div
+          class="mx-auto grid min-h-[640px] max-w-6xl items-center gap-8 px-6 md:grid-cols-2"
+        >
+          <div class="order-2 md:order-1">
+            <h1 class="font-display text-4xl font-bold md:text-5xl">
+              Hello<span class="text-coral">.</span>
+            </h1>
+            <p
+              class="relative mt-4 font-display text-2xl text-mist md:text-3xl"
+            >
+              I'm Sothearith
+            </p>
+            <p class="mt-3 font-display text-3xl font-bold md:text-5xl">
+              Aspiring Software Developer
+            </p>
+            <p class="mt-6 max-w-md leading-relaxed text-mist">
+              19 years old, Diploma graduate, and IELTS 6.5. I write web pages
+              and programs, and I'm learning how to design databases that hold
+              up.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#contact" class="btn btn-solid">Got a project?</a>
+              <a href="./photo/CV.pdf" class="btn btn-line">My resume</a>
+            </div>
+          </div>
+
+          <!-- Portrait: put your photo at images/profile.jpg (a cut-out PNG looks best) -->
+          <div
+            class="relative order-1 mx-auto aspect-square w-full max-w-md md:order-2"
+          >
+            <span class="bracket left-0 top-[10%]" aria-hidden="true"
+              >&lt;</span
+            >
+            <span class="bracket bottom-[8%] right-0" aria-hidden="true"
+              >&gt;</span
+            >
+            <div class="ring" aria-hidden="true"></div>
+            <div
+              class="portrait absolute inset-x-[12%] bottom-0 top-[4%] flex items-end justify-center bg-gradient-to-b from-transparent to-ink/60"
+            >
+              <img
+                src="./photo/full.png"
+                alt="Portrait of Sothearith Chao"
+                class="relative h-full w-full object-cover object-top"
+                onerror="this.style.display = 'none'"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills strip -->
+      <section class="strip" aria-label="Technologies">
+        <ul
+          class="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-10 gap-y-3 px-6 py-5 text-lg"
+        >
+          <li><span>HTML</span></li>
+          <li><span>CSS</span></li>
+          <li><span>JavaScript</span></li>
+          <li><span>C</span></li>
+          <li><span>C++</span></li>
+          <li><span>C#</span></li>
+          <li><span>SQL</span></li>
+        </ul>
+      </section>
+
+      <!-- About -->
+      <section
+        id="about"
+        class="mx-auto grid max-w-6xl gap-14 px-6 py-24 md:grid-cols-2"
+      >
+        <ul class="steps space-y-10 self-start">
+          <li>
+            <h3 class="font-display text-lg font-semibold">Web development</h3>
+            <p class="mt-1 text-sm text-mist">
+              Pages built with HTML, CSS, JavaScript and Tailwind that work on
+              phones and desktops.
+            </p>
+          </li>
+          <li>
+            <h3 class="font-display text-lg font-semibold">
+              Programming in C, C++ and C#
+            </h3>
+            <p class="mt-1 text-sm text-mist">
+              Console programs and logic practice that built my foundation in
+              how code runs.
+            </p>
+          </li>
+          <li>
+            <h3 class="font-display text-lg font-semibold">Database design</h3>
+            <p class="mt-1 text-sm text-mist">
+              Writing SQL queries and planning tables, keys and relationships.
+            </p>
+          </li>
+        </ul>
+
+        <div>
+          <h2 class="font-display text-4xl font-bold">About me</h2>
+          <p class="mt-6 leading-8 text-mist">
+            I'm Sothearith Chao, a 19-year-old developer who just finished a
+            Diploma. I learned the basics of programming in C, then moved on to
+            C++ and C#, and picked up HTML, CSS and JavaScript to build things
+            people can open in a browser. Right now I'm studying databases: SQL
+            and how to structure data so it stays clean as a project grows.
+          </p>
+          <p class="mt-4 leading-8 text-mist">
+            I recently scored 6.5 on the IELTS, so I can read documentation and
+            work with international teams in English. I'm looking for an
+            internship or junior role where I can keep learning.
+          </p>
+
+          <dl class="mt-10 grid grid-cols-3 gap-4">
+            <div>
+              <dt class="font-display text-3xl font-bold">
+                6.5<span class="text-coral">+</span>
+              </dt>
+              <dd class="mt-1 text-sm text-mist">IELTS score</dd>
+            </div>
+            <div>
+              <dt class="font-display text-3xl font-bold">
+                7<span class="text-coral">+</span>
+              </dt>
+              <dd class="mt-1 text-sm text-mist">Languages and tools</dd>
+            </div>
+            <div>
+              <dt class="font-display text-3xl font-bold">1</dt>
+              <dd class="mt-1 text-sm text-mist">Diploma completed</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <!-- Projects -->
+      <section id="projects" class="border-t border-line bg-panel/40 py-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <h2 class="text-center font-display text-4xl font-bold">Projects</h2>
+          <p class="mx-auto mt-4 max-w-lg text-center text-mist">
+            These are sample cards. Replace the titles, descriptions, images and
+            links with your own work.
+          </p>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <!-- Card 1 -->
+            <article class="card overflow-hidden">
+              <div
+                class="thumb flex h-44 items-center justify-center overflow-hidden font-display text-xl text-line"
+              >
+                <a
+                  href="./photo/Screenshot 2026-10-06 020653.png"
+                  class="block h-full w-full"
+                >
+                  <img
+                    src="./photo/Screenshot 2026-10-06 020653.png"
+                    alt="Personal website preview"
+                    class="h-full w-full object-cover object-top"
+                  />
+                </a>
+              </div>
+              <div class="p-6">
+                <h3 class="font-display text-lg font-semibold">
+                  Personal website
+                </h3>
+                <p class="mt-2 text-sm leading-6 text-mist">
+                  A responsive site built with HTML, Tailwind CSS and
+                  JavaScript.
+                </p>
+                <p class="mt-4 text-sm font-bold text-coral">
+                  HTML · CSS · JavaScript
+                </p>
+                <a
+                  href="#"
+                  class="mt-4 inline-block text-sm font-bold underline decoration-coral underline-offset-4"
+                  >View project</a
+                >
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card overflow-hidden">
+              <div
+                class="thumb flex h-44 items-center justify-center overflow-hidden font-display text-xl text-line"
+              >
+                <a
+                  href="./photo/Screenshot 2026-10-06 020434.png"
+                  class="block h-full w-full"
+                >
+                  <img
+                    src="./photo/Screenshot 2026-10-06 020434.png"
+                    alt="Student management app preview"
+                    class="h-full w-full object-cover object-top"
+                  />
+                </a>
+              </div>
+              <div class="p-6">
+                <h3 class="font-display text-lg font-semibold">
+                  Student management app
+                </h3>
+                <p class="mt-2 text-sm leading-6 text-mist">
+                  A C# console program to add, search and update student
+                  records.
+                </p>
+                <p class="mt-4 text-sm font-bold text-coral">C# · C++</p>
+                <a
+                  href="#"
+                  class="mt-4 inline-block text-sm font-bold underline decoration-coral underline-offset-4"
+                  >View project</a
+                >
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card overflow-hidden">
+              <div
+                class="thumb flex h-44 items-center justify-center overflow-hidden bg-white/5 font-display text-xl text-line"
+              >
+                <a
+                  href="./photo/Untitled diagram_2026-10-05T19_02_52.284Z.png"
+                  class="block h-full w-full"
+                >
+                  <img
+                    src="./photo/Untitled diagram_2026-10-05T19_02_52.284Z.png"
+                    alt="Library database design diagram"
+                    class="h-full w-full object-contain p-2"
+                  />
+                </a>
+              </div>
+              <div class="p-6">
+                <h3 class="font-display text-lg font-semibold">
+                  Library database design
+                </h3>
+                <p class="mt-2 text-sm leading-6 text-mist">
+                  A SQL schema with tables for books, members and loans, plus
+                  sample queries.
+                </p>
+                <p class="mt-4 text-sm font-bold text-coral">
+                  SQL · Database design
+                </p>
+                <a
+                  href="#"
+                  class="mt-4 inline-block text-sm font-bold underline decoration-coral underline-offset-4"
+                  >View project</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="mx-auto grid max-w-6xl gap-12 px-6 py-24 md:grid-cols-2"
+      >
+        <div>
+          <h2 class="font-display text-4xl font-bold">Got a project?</h2>
+          <p class="mt-6 max-w-md leading-8 text-mist">
+            Tell me what you're building or send me an opportunity. I reply to
+            every message.
+          </p>
+          <ul class="mt-8 space-y-3 text-sm">
+            <li>
+              <a class="hover:text-coral" href="mailto:your.email@example.com"
+                >your.email@example.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-coral"
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noopener"
+                >github.com/yourusername</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-coral"
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                rel="noopener"
+                >linkedin.com/in/yourusername</a
+              >
+            </li>
+          </ul>
+        </div>
+        <form id="contact-form" class="space-y-4">
+          <label class="block text-sm font-medium"
+            >Name<input
+              class="field mt-1"
+              type="text"
+              name="name"
+              required
+              autocomplete="name"
+          /></label>
+          <label class="block text-sm font-medium"
+            >Email<input
+              class="field mt-1"
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+          /></label>
+          <label class="block text-sm font-medium"
+            >Message<textarea
+              class="field mt-1"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="btn btn-solid">Send message</button>
+          <p id="form-note" class="text-sm text-mist" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="border-t border-line py-6 text-center text-sm text-mist">
+      © <span id="year"></span> Sothearith Chao
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
