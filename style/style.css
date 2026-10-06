@@ -73,9 +73,13 @@ body {
   box-shadow: 0 0 80px rgba(242, 106, 79, 0.35);
 }
 .portrait {
-  position: relative;
-  border-radius: 0 0 999px 999px;
+  position: absolute;
+  inset: 6%;
+  border-radius: 50%;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 .bracket {
   position: absolute;

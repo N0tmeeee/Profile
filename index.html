@@ -95,7 +95,6 @@
             </div>
           </div>
 
-          <!-- Portrait: put your photo at images/profile.jpg (a cut-out PNG looks best) -->
           <div
             class="relative order-1 mx-auto aspect-square w-full max-w-md md:order-2"
           >
@@ -106,13 +105,15 @@
               >&gt;</span
             >
             <div class="ring" aria-hidden="true"></div>
+
+            <!-- Updated portrait wrapper -->
             <div
-              class="portrait absolute inset-x-[12%] bottom-0 top-[4%] flex items-end justify-center bg-gradient-to-b from-transparent to-ink/60"
+              class="portrait absolute inset-[6%] overflow-hidden rounded-full"
             >
               <img
                 src="./photo/full.png"
                 alt="Portrait of Sothearith Chao"
-                class="relative h-full w-full object-cover object-top"
+                class="h-full w-full object-contain object-bottom"
                 onerror="this.style.display = 'none'"
               />
             </div>
@@ -390,6 +391,6 @@
       © <span id="year"></span> Sothearith Chao
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
